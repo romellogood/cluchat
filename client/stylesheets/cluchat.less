@@ -1,0 +1,65 @@
+* { margin: auto; }
+nav {
+	background-color: #6a4c92;
+	font-size: 60px;
+	color: white;
+	padding: 20px;
+	a:link, a:visited, a:hover, a:active { text-decoration: none; color: white; text-align: left; }
+	a#login-buttons-logout { font-size: 20px; }
+	li { list-style: none; }
+}
+section {
+	font-size: 20px;
+}
+article {
+	margin: 15px;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid lightgrey;
+	padding-top: 10px;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 10;
+	background-color: #E8E8E8;
+	section {
+		max-width: 620px;
+		margin: 0 auto;
+		padding: 15px 10px;
+	}
+	input {
+		border: 0;
+		width: 100%;
+		background: transparent;
+		font-size: 20px;
+	}
+	input:focus { outline: none; }
+}
+.btn-Google {
+	background-color: #ffc222;
+	font-weight: bold;
+}
+.btn-Google:hover {
+	color: #6a4c92;
+}
+
+.welcome, .not-found {
+	padding-top: 10px;
+	font-size: 80px;
+	background-color: #E8E8E8;
+}
+.name { color: #ffd589; }
+.message { display: inline; }
+
+@media screen and (max-width: 500px){
+    nav a{
+        text-align: center;
+    }
+}
