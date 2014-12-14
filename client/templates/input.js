@@ -10,6 +10,7 @@ Template.input.events = {
           name: name,
           message: message.value,
           time: Date.now(),
+          userId: Meteor.user()._id,
         });
 
         document.getElementById('message').value = '';

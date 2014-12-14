@@ -1,7 +1,11 @@
 <template name="messages">
   {{#each messages}}
     <article>
-      <strong class="name">{{name}}:</strong>
+      {{#if ownPost}}
+  			<strong class="name current">{{name}}:</strong>
+			{{else}}
+  			<strong class="name">{{name}}:</strong>
+			{{/if}}
       <p class="message">{{message}}</p>
     </article>
     <hr>
