@@ -2,7 +2,6 @@
 nav {
 	background-color: #6a4c92;
 	color: white;
-	font-size: 20px;
 	padding: 10px;
 	position: fixed;
 	top: 0;
@@ -13,7 +12,7 @@ nav {
 		display: block;
 		padding: 6px 12px;
 		margin-bottom: 8px;
-		font-size: 14px;
+		font-size: 1em;
 		font-weight: normal;
 		line-height: 1.42857143;
 		text-align: center;
@@ -24,10 +23,11 @@ nav {
 		letter-spacing: 0.75px;
 	}
 	li { list-style: none; }
-	.title { font-size: 40px; }
+	.title { font-size: 3em; }
 }
 section {
-	font-size: 20px;
+	font-size: 1.5em;
+	padding-top: 77px;
 	padding-bottom: 60px;
 }
 article {
@@ -57,7 +57,7 @@ footer {
 		border: 0;
 		width: 100%;
 		background: transparent;
-		font-size: 20px;
+		font-size: 1em;
 	}
 	input:focus { outline: none; }
 }
@@ -68,16 +68,10 @@ footer {
 .btn:hover {
 	color: #6a4c92;
 }
-.welcome, .not-found {
-	padding-top: 10px;
-	font-size: 80px;
-}
+.welcome, .not-found { font-size: 4em; }
 .name { color: #ffd589; }
 .current { color: #6a4c92; }
 .message { display: inline; }
 
-@media screen and (max-width: 600px){
-    nav {
-        text-align: center;
-    }
-}
+@media screen and (max-width: 600px){ nav { text-align: center; } }
+@media screen and (max-width: 991px){ section { padding-top: 170px; } }
