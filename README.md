@@ -1,4 +1,4 @@
 Clu Chat
 =======
 
-A Meteor.js powered chat app.
+A Meteor powered Chat Application
