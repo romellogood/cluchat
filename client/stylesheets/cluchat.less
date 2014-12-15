@@ -7,7 +7,11 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	a:link, a:visited, a:hover, a:active { text-decoration: none; color: white; text-align: left; }
+	a:link, a:visited, a:hover, a:active {
+		color: white;
+		text-decoration: none;
+		text-align: left;
+	}
 	a#login-buttons-logout {
 		display: block;
 		padding: 6px 12px;
@@ -20,10 +24,17 @@ nav {
 		vertical-align: middle;
 		border-radius: 4px;
 		background-color: #ffc222;
-		letter-spacing: 0.75px;
+		letter-spacing: 0.5px;
 	}
 	li { list-style: none; }
 	.title { font-size: 3em; }
+	.btn {
+		background-color: #ffc222;
+		letter-spacing: 0.5px;
+	}
+	.btn:hover { color: #6a4c92; }
+	.btn-Google { margin-top: -6px }
+	.navbar-form { box-shadow: none; }
 }
 section {
 	font-size: 1.5em;
@@ -61,17 +72,23 @@ footer {
 	}
 	input:focus { outline: none; }
 }
-.btn {
-	background-color: #ffc222;
-	letter-spacing: 0.5px;
-}
-.btn:hover {
-	color: #6a4c92;
-}
 .welcome, .not-found { font-size: 4em; }
 .name { color: #ffd589; }
-.current { color: #6a4c92; }
+.current-user { color: #6a4c92; }
 .message { display: inline; }
 
-@media screen and (max-width: 600px){ nav { text-align: center; } }
-@media screen and (max-width: 991px){ section { padding-top: 170px; } }
+/* Media Queries*/
+@media screen and (max-width: 450px) {
+	nav {
+		text-align: center;
+		.github { display: none; }
+	}
+	section {
+		padding-top: 140px;
+	}
+}
+@media screen and (min-width: 451px) and (max-width: 991px){
+	section {
+		padding-top: 170px;
+	}
+}
